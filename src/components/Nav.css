@@ -1,0 +1,31 @@
+:root {
+    --primary-color:rgb(250, 182, 0);
+    --secondary-color:rgb(238, 233, 223);
+}
+
+li:hover {
+    color: var(--secondary-color);
+}
+
+/* Styling for Navigation links */
+li {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    box-shadow: 2px 2px 15px rgba(94, 94, 94, 0.658);
+}
+
+/* Setting color and decoration for hovering over header links */
+/* li:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+} */
+
+h2 {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border: 2px solid black;
+    text-decoration: none;
+    box-shadow: 2px 2px 15px rgba(94, 94, 94, 0.658);
+}

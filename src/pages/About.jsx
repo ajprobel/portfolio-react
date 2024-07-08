@@ -1,14 +1,24 @@
 import image from "../assets/images/20240214_174207.jpg";
 
 export default function About() {
+
+  const linkStyle = {
+    color: "rgb(184, 135, 0)",
+  }
+
+  const imgStyle = {
+    maxWidth: "80%",
+    boxShadow: "0px 0px 15px 5px rgb(184, 135, 0)"
+  }
+
   return (
     <div>
-      <h1>About Me</h1>
-      <img src={image} alt="picture of me" className="img-fluid rounded m-3 border border-dark-subtle" />
-      <div className="my-3">
+      <h1 className="mb-3">About Me</h1>
+      <img src={image} alt="picture of me" className="img-fluid rounded m-3" style={imgStyle} />
+      <div className="my-4">
         <p>
           Originally from Cincinnati, OH, and now living in Los Angeles, CA, I'm
-          an aspiring developer with a background in Audio Engineering, Music
+          a developer with a background in Audio Engineering, Music
           Recording, and designing Interactive Music Systems for video games.
           I've had the pleasure of working with such a variety of teams in
           different environments and disciplines; problem-solving and bringing a
@@ -46,9 +56,9 @@ export default function About() {
         </p>
       </div>
       <div className="my-3">
-        <a className="p-2" href="https://github.com/ajprobel">GitHub</a>
-        <a className="p-2" href="https://www.linkedin.com/in/james-probel-568354136/">LinkedIn</a>
-        <a className="p-2" href="https://www.instagram.com/jprobel/">Instagram</a>
+        <a className="p-2" href="https://github.com/ajprobel" style={linkStyle}>GitHub</a>
+        <a className="p-2" href="https://www.linkedin.com/in/james-probel-568354136/" style={linkStyle}>LinkedIn</a>
+        <a className="p-2" href="https://www.instagram.com/jprobel/" style={linkStyle}>Instagram</a>
       </div>
     </div>
   );

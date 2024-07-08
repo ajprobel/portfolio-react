@@ -7,10 +7,14 @@ export default function Resume() {
         height: "1000px",
     }
 
+    const linkStyle = {
+        color: "rgb(184, 135, 0)",
+      }
+
     return (
         <div className='my-3'>
             <h1>Resume</h1>
-            <h4>Download PDF version <a href={download} download>here</a></h4>
+            <h4>Download PDF version <a style={linkStyle} href={download} download>here</a></h4>
             <img src={resume} alt="Probel Resume 2024" className="img-fluid rounded m-3 shadow-lg" style={resumeStyle}></img>
         </div>
     )
