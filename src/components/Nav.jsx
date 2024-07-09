@@ -19,7 +19,7 @@ export default function Nav() {
 
   return (
     <section className="mb-5 d-flex justify-content-around align-items-center" style={navStyle}>
-      <h2 className="p-2">James Probel</h2>
+      <h2 className="p-2 px-5">James Probel</h2>
       <ul className="nav d-flex justify-content-center">
         
         <li className="navItem m-2 p-2">
