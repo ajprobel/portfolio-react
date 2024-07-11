@@ -26,7 +26,7 @@ export default function About() {
         </p>
         <p>
           Music has been a major part of my life since I was a child; starting
-          from playing piano when I was 6, up to touring multiple states in the
+          from playing piano when I was 6, up to touring various states in the
           Midwest and East Coast playing Double Bass in multiple ensembles. This
           passion led me to study audio engineering and music production at my
           Alma Mater: Ohio University in Athens, OH.
@@ -54,11 +54,6 @@ export default function About() {
           Please find my contact information using the "Contact" link above, or
           click the icons below - I look forward to meeting you!
         </p>
-      </div>
-      <div className="my-3">
-        <a className="p-2" href="https://github.com/ajprobel" style={linkStyle}>GitHub</a>
-        <a className="p-2" href="https://www.linkedin.com/in/james-probel-568354136/" style={linkStyle}>LinkedIn</a>
-        <a className="p-2" href="https://www.instagram.com/jprobel/" style={linkStyle}>Instagram</a>
       </div>
     </div>
   );

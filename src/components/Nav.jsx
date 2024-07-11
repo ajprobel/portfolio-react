@@ -6,7 +6,7 @@ export default function Nav() {
     color: "black",
     backgroundColor: "rgb(250, 182, 0)",
     backgroundImage: "linear-gradient(rgb(255, 185, 0),  rgb(60, 40, 0))",
-    boxShadow: "0px 0px 8px 2px rgb(80, 50, 0)",
+    boxShadow: "0px 0px 8px 3px rgb(80, 50, 0)",
     height: "auto",
     textDecoration: "none",
   };
