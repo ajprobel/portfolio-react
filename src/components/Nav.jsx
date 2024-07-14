@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import './Nav.css'
 
 export default function Nav() {
@@ -17,21 +17,23 @@ export default function Nav() {
     textDecoration: "none"
   }
 
+  const location = useLocation();
+
   return (
     <section className="mb-5 d-flex justify-content-around align-items-center" style={navStyle}>
       <h2 className="p-2 px-5">James Probel</h2>
       <ul className="nav d-flex justify-content-center">
         
-        <li className="navItem m-2 p-2">
+        <li className={`navItem m-2 p-2 ${location.pathname === '/' ? 'active' : ''}`}>
           <Link to="/">About Me</Link>
         </li>
-        <li className="navItem m-2 p-2">
+        <li className={`navItem m-2 p-2 ${location.pathname === '/Portfolio' ? 'active' : ''}`}>
           <Link to="/Portfolio">Portfolio</Link>
         </li>
-        <li className="navItem m-2 p-2">
+        <li className={`navItem m-2 p-2 ${location.pathname === '/Contact' ? 'active' : ''}`}>
           <Link to="/Contact">Contact</Link>
         </li>
-        <li className="navItem m-2 p-2">
+        <li className={`navItem m-2 p-2 ${location.pathname === '/JP-Resume' ? 'active' : ''}`}>
           <Link to="/JP-Resume">Resume</Link>
         </li>
       </ul>

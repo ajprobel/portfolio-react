@@ -68,6 +68,10 @@ function Contact() {
     color: "black"
   };
 
+  const spacer = {
+    height: "200px",
+  }
+
   return (
     <>
       <h1 className="mb-5">Contact Me</h1>
@@ -112,6 +116,7 @@ function Contact() {
           </button>
         </form>
       </div>
+      <div style={spacer}></div>
     </>
   );
 }
